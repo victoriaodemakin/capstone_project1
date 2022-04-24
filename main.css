@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after body {
+  max-width: 100%;
+}
+
+body {
+  background-color: hsl(218, 28%, 13%);
+  color: hsl(0, 0%, 100%);
+  
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
