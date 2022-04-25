@@ -1,19 +1,171 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
-html {
-  box-sizing: border-box;
-}
+
 *,
-*:before,
-*:after body {
-  max-width: 100%;
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
+html {
+  --intro-bg-color: hsl(217, 28%, 15%);
+  --email-bg: hsl(217, 28%, 15%);
+  --header-color: hsla(0,0%, 88%,0.9);
+  --background-color: hsl(218, 28%, 13%);
+  --white-text-color: hsl(0, 0%, 100%);
+  --cyan-text-color: hsl(176, 68%, 64%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --blue-text: hsl(198, 60%, 50%);
+  --light-red-color: hsl(0, 100%, 63%);
+
+  --header-text: "Open Sans", sans-serif;
+  --body-text: "Raleway", sans-serif;
+
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 body {
-  background-color: hsl(218, 28%, 13%);
-  color: hsl(0, 0%, 100%);
-  
-  margin: auto;
-  font-family: "Open Sans", sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  font-family: var(--body-text);
+  color: var(--white-text-color);
   font-size: 1em;
+  width: 100%;
+}
+.hero{
+  width: 100%;
+}
+header {
+
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2em 1em;
+ 
+}
+.logo img {
+  width: 70%;
+}
+
+
+.navbar {
+  width: 100%;
+  
+}
+
+.navbar ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  justify-items: space-between;
+
+}
+
+.navbar ul li {
+  font-family: var(--body-text);
+  text-align: right;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--body-text);
+  list-style-type: none;
+  padding-right: -1em;
+  
+  
+}
+
+.nav-link a {
+  display: block;
+  text-decoration: none;
+  color: var(--white-text-color);
+  
+}
+.container{
+  width: 100%;
+  padding: 2em 2em;
+  margin-bottom: -2em;
+ 
+  
+}
+.hero{
+  background-color: var(--intro-bg-color);
+}
+.hero-img img{
+  width: 100%;
+  padding-bottom: 2em;
+}
+.about{
+  
+  background-color: var(--intro-bg-color);
+ 
+}
+.about-desc div{
+  background-image: url(./images/bg-curvy-mobile.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  
+  
+}
+
+.about-desc h1{
+  font-family: var(--header-text);
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5em;
+  padding: 2em 1em;
+  margin-bottom: -1em;
+  margin-top: -2em;
+  
+  
+
+}
+.about-desc p{
+  font-family: var(--body-text);
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.3em;
+  padding: 0em 2em;
+}
+.primary-cta{
+  background: linear-gradient(to right, var(--cyan-text-color), var(--blue-text));
+    border-radius: 5em;
+    border: none;
+    color: white;
+    font-family: var(--white-text-color);
+    padding: 1em;
+    width: 50%;
+    margin: 1em 6em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    
 }
