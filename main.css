@@ -46,7 +46,7 @@ html:focus-within {
   }
 }
 body {
-  background: pink;
+  
   margin: 0;
   font-family: var(--body-text);
   color: var(--white-text-color);
