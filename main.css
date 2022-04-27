@@ -46,12 +46,13 @@ html:focus-within {
   }
 }
 body {
-  background-color: var(--background-color);
+  
   margin: 0;
   font-family: var(--body-text);
   color: var(--white-text-color);
   font-size: 1em;
   width: 100%;
+  overflow: hidden;
 }
 .hero{
   width: 100%;
@@ -453,6 +454,16 @@ footer p{
   text-align: justify;
   line-height: 1.6em;
   padding-left: 1em;
+  
+}
+footer a {
+  display: block;
+  text-decoration: none;
+  color: var(--white-text-color);
+  font-family: var(--body-text);
+  font-size: .9em;
+  font-weight: 400;
+  color: var(--white-text-color);
   
 }
 .about-list{
