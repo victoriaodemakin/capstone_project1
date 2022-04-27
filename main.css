@@ -46,13 +46,14 @@ html:focus-within {
   }
 }
 body {
-  
+  background-color: var(--background-color);
   margin: 0;
+  padding:0;
   font-family: var(--body-text);
   color: var(--white-text-color);
   font-size: 1em;
   width: 100%;
-  overflow: hidden;
+  
 }
 .hero{
   width: 100%;
